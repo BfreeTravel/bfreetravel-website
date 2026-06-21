@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B Free Travel - Disney & Vacation Booking Specialists</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                ✈️ B Free Travel
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Dream Vacation Awaits</h1>
+            <p>Expert Disney & Vacation Booking at Your Fingertips</p>
+            <a href="#contact" class="btn btn-primary">Book Your Adventure</a>
+        </div>
+        <div class="hero-icons">
+            🗺️ ✈️ 🧭
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏰</div>
+                    <h3>Disney Vacations</h3>
+                    <p>Customized Disney packages for families, groups, and individuals. We handle all the details so you can focus on the magic.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h3>Worldwide Vacations</h3>
+                    <p>Dream destinations anywhere in the world. Beach resorts, mountain retreats, city adventures — we've got you covered.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Group Bookings</h3>
+                    <p>Planning a group trip? We specialize in coordinating group vacations with exclusive rates and personalized service.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Corporate Events</h3>
+                    <p>Team building trips and corporate retreats. Let us create an unforgettable experience for your team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <h2>Why Choose B Free Travel?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>✅ Expert Knowledge</h3>
+                    <p>Years of experience booking Disney and vacation packages.</p>
+                </div>
+                <div class="feature">
+                    <h3>✅ Best Prices</h3>
+                    <p>We negotiate the best rates so you save money.</p>
+                </div>
+                <div class="feature">
+                    <h3>✅ 24/7 Support</h3>
+                    <p>Always here to help before, during, and after your trip.</p>
+                </div>
+                <div class="feature">
+                    <h3>✅ Personal Touch</h3>
+                    <p>Every vacation is customized to your preferences and budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About B Free Travel</h2>
+            <p>At B Free Travel, we believe vacations should be hassle-free and magical. Whether you're dreaming of Mickey Mouse hugs at Disney or exploring exotic destinations around the globe, we're here to make your travel dreams come true. With personalized service and expert planning, we take the stress out of booking so you can focus on creating memories.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Ready to Book Your Adventure?</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="destination">Preferred Destination *</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select a destination</option>
+                        <option value="Disney World">Walt Disney World (Florida)</option>
+                        <option value="Disneyland">Disneyland (California)</option>
+                        <option value="Disney Cruise">Disney Cruise Line</option>
+                        <option value="International Disney">International Disney Parks</option>
+                        <option value="Beach">Beach Vacation</option>
+                        <option value="Mountain">Mountain Retreat</option>
+                        <option value="City">City Adventure</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dates">Preferred Travel Dates</label>
+                    <input type="text" id="dates" name="dates" placeholder="e.g., June 15-22, 2026">
+                </div>
+                <div class="form-group">
+                    <label for="message">Tell Us About Your Dream Vacation *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send My Inquiry</button>
+            </form>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>📧 Email: <a href="mailto:bfreetraveler@gmail.com">bfreetraveler@gmail.com</a></p>
+                <p>Feel free to reach out with any questions or to start planning your next adventure!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 B Free Travel. All rights reserved. ✈️ Making vacations worry-free since day one.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
