@@ -16,15 +16,29 @@
         .faq-category-title {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
-            color: var(--primary-color);
+            color: var(--white);
             margin-bottom: 2rem;
             padding-bottom: 1rem;
             border-bottom: 3px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .faq-category-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-color), rgba(210, 180, 140, 0.8));
+            border-radius: 8px;
+            font-size: 1.8rem;
         }
 
         .faq-item {
             margin-bottom: 2rem;
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: rgba(0, 0, 0, 0.3);
             padding: 1.5rem;
             border-radius: 10px;
             border-left: 4px solid var(--primary-color);
@@ -32,7 +46,7 @@
         }
 
         .faq-item:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(0, 0, 0, 0.4);
             transform: translateX(5px);
         }
 
@@ -40,7 +54,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 1.1rem;
             font-weight: 600;
-            color: var(--white);
+            color: var(--primary-color);
             margin-bottom: 0.8rem;
             cursor: pointer;
             display: flex;
@@ -115,7 +129,10 @@
         <div class="container">
             <!-- Booking & Planning Section -->
             <div class="faq-section">
-                <h2 class="faq-category-title">📅 Booking & Planning</h2>
+                <h2 class="faq-category-title">
+                    <span class="faq-category-icon">📋</span>
+                    Booking & Planning
+                </h2>
 
                 <div class="faq-item">
                     <div class="faq-question">Why do I need a travel agent?</div>
@@ -168,7 +185,10 @@
 
             <!-- Pricing & Payments Section -->
             <div class="faq-section">
-                <h2 class="faq-category-title">💰 Pricing & Payments</h2>
+                <h2 class="faq-category-title">
+                    <span class="faq-category-icon">💳</span>
+                    Pricing & Payments
+                </h2>
 
                 <div class="faq-item">
                     <div class="faq-question">How much does it cost to use a travel agent?</div>
@@ -194,7 +214,10 @@
 
             <!-- Travel Documents Section -->
             <div class="faq-section">
-                <h2 class="faq-category-title">📄 Travel Documents</h2>
+                <h2 class="faq-category-title">
+                    <span class="faq-category-icon">🛂</span>
+                    Travel Documents
+                </h2>
 
                 <div class="faq-item">
                     <div class="faq-question">Do I need a passport or visa?</div>
@@ -213,7 +236,10 @@
 
             <!-- Changes & Cancellations Section -->
             <div class="faq-section">
-                <h2 class="faq-category-title">🔄 Changes & Cancellations</h2>
+                <h2 class="faq-category-title">
+                    <span class="faq-category-icon">↩️</span>
+                    Changes & Cancellations
+                </h2>
 
                 <div class="faq-item">
                     <div class="faq-question">What happens if I need to cancel my trip?</div>
@@ -239,7 +265,10 @@
 
             <!-- During Travel Section -->
             <div class="faq-section">
-                <h2 class="faq-category-title">✈️ During Travel</h2>
+                <h2 class="faq-category-title">
+                    <span class="faq-category-icon">✈️</span>
+                    During Travel
+                </h2>
 
                 <div class="faq-item">
                     <div class="faq-question">What if something goes wrong while I'm traveling?</div>
@@ -265,7 +294,10 @@
 
             <!-- B Free Travel Section -->
             <div class="faq-section">
-                <h2 class="faq-category-title">🌟 B Free Travel</h2>
+                <h2 class="faq-category-title">
+                    <span class="faq-category-icon">ℹ️</span>
+                    About B Free Travel
+                </h2>
 
                 <div class="faq-item">
                     <div class="faq-question">Why should I choose B Free Travel?</div>
