@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - B Free Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .faq-section {
+            margin-bottom: 3rem;
+        }
+
+        .faq-category-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateX(5px);
+        }
+
+        .faq-question {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 0.8rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .faq-question::before {
+            content: '▶';
+            margin-right: 0.8rem;
+            color: var(--primary-color);
+            font-size: 0.8rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::before {
+            transform: rotate(90deg);
+        }
+
+        .faq-answer {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--light-text);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding-left: 1.6rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                ✈️ B Free Travel
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="travel-tips.html">Travel Tips</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="testimonials.html">Reviews</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about booking your dream vacation</p>
+        </div>
+    </section>
+
+    <!-- FAQs Content -->
+    <section class="faq-page-section">
+        <div class="container">
+            <!-- Booking & Planning Section -->
+            <div class="faq-section">
+                <h2 class="faq-category-title">📅 Booking & Planning</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Why do I need a travel agent?</div>
+                    <div class="faq-answer">
+                        A travel agent will handle all your bookings and be your point of contact with the supplier, taking all the stress out of planning, organizing, and finalizing the vacation. B Free Travel will handle all support issues that may arise and provide expert recommendations.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can you book groups?</div>
+                    <div class="faq-answer">
+                        Almost every supplier has group rates, which can reduce the overall price of a trip. Whether it is a corporate outing, a family vacation, or a friends trip, group bookings are available!
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you specialize in only one type of vacation?</div>
+                    <div class="faq-answer">
+                        B Free Travel utilizes many suppliers, from all inclusive resorts to Disney vacations to cruises, even hotel bookings. If you can think of a place to travel to, B Free will work to make it the best vacation ever!
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">I have a general type of vacation or location in mind, is that enough to get started?</div>
+                    <div class="faq-answer">
+                        Of course! A big part of a travel agent's job is to research and provide as much information on vacation destinations as possible, so you have everything you need to make the final decision on where you want to go. You should feel secure knowing that B Free Travel has the knowledge and tools to build your vacation from the ground up.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How far in advance should I book my trip?</div>
+                    <div class="faq-answer">
+                        The general guidelines for booking vacations is:
+                        <ul style="margin-top: 0.8rem; margin-left: 1.5rem;">
+                            <li>Cruises: 6-18 months</li>
+                            <li>International Travel: 6-12 months</li>
+                            <li>Disney: 6-18 months</li>
+                            <li>Domestic Travel: 3-6 months</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Help! I need to book a vacation or hotel last minute. Can you do it?</div>
+                    <div class="faq-answer">
+                        I will do my best to work with suppliers to find you a last minute vacation, depending on availability.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing & Payments Section -->
+            <div class="faq-section">
+                <h2 class="faq-category-title">💰 Pricing & Payments</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">How much does it cost to use a travel agent?</div>
+                    <div class="faq-answer">
+                        There is no extra cost for you to use a travel agent. The agent is paid by the supplier. The cost of your vacation is the same whether you book with an agent or not and the commission is only paid after the trip is complete. Agents are usually able to find better prices using their suppliers over an individual booking.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I use a payment plan?</div>
+                    <div class="faq-answer">
+                        Many suppliers offer payment plans. When using B Free Travel, you do not pay me, rather you pay the supplier directly, which allows you to utilize their payment plans.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Are there any hidden fees?</div>
+                    <div class="faq-answer">
+                        No. At B Free Travel, all prices are upfront and transparent. B Free will never charge you more than the supplier and the prices will be communicated clearly during the booking process.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Travel Documents Section -->
+            <div class="faq-section">
+                <h2 class="faq-category-title">📄 Travel Documents</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do I need a passport or visa?</div>
+                    <div class="faq-answer">
+                        Depending on the location of your travel, a passport is always recommended and is necessary for all international travel. US passports take an average of 4-6 weeks for standard processing and may be expedited for a fee to receive them earlier. Certain countries require visas for travel and this information will be provided to you if your vacation is set for a country that needs one.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can you help me with my travel documentation?</div>
+                    <div class="faq-answer">
+                        While you are responsible for obtaining and maintaining your own documents, B Free Travel will guide you through filling out entry paperwork for countries and verify that you have all the necessary documents needed to travel.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Changes & Cancellations Section -->
+            <div class="faq-section">
+                <h2 class="faq-category-title">🔄 Changes & Cancellations</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">What happens if I need to cancel my trip?</div>
+                    <div class="faq-answer">
+                        Sometimes life happens and trips need to be cancelled. Many suppliers offer a grace period for trip cancellation, with only a deposit being forfeited. It is always recommended to invest in travel insurance.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can I make changes after booking a vacation?</div>
+                    <div class="faq-answer">
+                        Most suppliers will allow changes within reason. Altering dates may alter the overall price, but with enough notice and availability, changes usually can be made.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Should I look into travel insurance?</div>
+                    <div class="faq-answer">
+                        Travel insurance is highly recommended. For the price that a vacation costs, you don't want unexpected events to cause a forfeiture of your money. Many suppliers carry their own insurance, which will give a refund in either credits or repayment, and it usually carries a small fee that is added onto the overall total. Dependent on the supplier and the travel insurance company, they can cover most cancellations from medical issues to the loss of a job and sometimes even for no designated reason. The security that travel insurance gives to you and your family is indescribable and should not be overlooked.
+                    </div>
+                </div>
+            </div>
+
+            <!-- During Travel Section -->
+            <div class="faq-section">
+                <h2 class="faq-category-title">✈️ During Travel</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">What if something goes wrong while I'm traveling?</div>
+                    <div class="faq-answer">
+                        The last thing you want is your perfect vacation to hit a speed bump. Things happen and B Free Travel is here to handle these issues if they arise. Know that once you book with B Free Travel, we are here to support you from planning until you get home. Simply contact us and let us know what is happing and we will work with whomever we need to to rectify the issue and get your vacation back on track.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Will someone be available in the event of an emergency?</div>
+                    <div class="faq-answer">
+                        Any person who books a vacation with B Free Travel will be provided with the agency phone number and email. In the event of an emergency, contact us in any way and we will work diligently to find a solution to your problem.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What if my flight is cancelled or delayed?</div>
+                    <div class="faq-answer">
+                        Flights can be changed or delayed for a multitude of reasons. B Free Travel will work with the airlines to try to find you an alternate flight, however, many airlines have in person attendants that can help travelers immediately in the moment, and provide quicker rectifications.
+                    </div>
+                </div>
+            </div>
+
+            <!-- B Free Travel Section -->
+            <div class="faq-section">
+                <h2 class="faq-category-title">🌟 B Free Travel</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Why should I choose B Free Travel?</div>
+                    <div class="faq-answer">
+                        When you book with B Free Travel, you'll get unparalleled service, with someone who is dedicated to making sure that your vacation is the best. I will strive to get all the information about a trip while ensuring that everything is done to make your next vacation your best. Also, included in every Disney World vacation booking is a crash course into the ins and outs of WDW. We will review resorts, transportation, dining, lightning lanes, and give a general outline into getting the most out of your next Disney World trip.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I get started?</div>
+                    <div class="faq-answer">
+                        Simply fill out the contact form on the main page, contact me via social media, or send an email to start your journey into travel with a complimentary consultation to discuss your travel goals, budget, and preferences!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="page-cta">
+        <div class="container">
+            <h2>Still Have Questions?</h2>
+            <p>Feel free to reach out to us directly!</p>
+            <a href="index.html#contact" class="btn btn-primary">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 B Free Travel. All rights reserved. ✈️ Making vacations worry-free since day one.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Toggle Functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
